@@ -1,0 +1,103 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heroSection {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000 0%, #1a0202 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 100px 20px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contentSection {
+  padding: 100px 0;
+}
+
+.storyBlock {
+  max-width: 900px;
+  margin: 0 auto 100px;
+  background: var(--secondary);
+  padding: 60px;
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.storyText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.storyText:last-child {
+  margin-bottom: 0;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: rgba(42, 42, 42, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  padding: 50px 40px;
+  border-radius: 4px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.cardIcon {
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--foreground);
+  letter-spacing: 1px;
+}
+
+.cardText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #aaaaaa;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .storyBlock {
+    padding: 40px 20px;
+  }
+}

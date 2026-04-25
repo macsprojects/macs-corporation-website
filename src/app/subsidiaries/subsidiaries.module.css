@@ -1,0 +1,147 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heroSection {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000 0%, #1a0202 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 100px 20px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.contentSection {
+  padding: 100px 0;
+}
+
+.flagshipBadge {
+  display: inline-block;
+  background: rgba(161, 18, 18, 0.2);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.techLogoWrapper {
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.techLogo {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.subsidiaryCard {
+  background: var(--secondary);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.subsidiaryHeader {
+  padding: 60px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(161, 18, 18, 0.1) 0%, transparent 100%);
+}
+
+.subsidiaryTitle {
+  font-size: 2.5rem;
+  color: var(--foreground);
+  margin-bottom: 20px;
+}
+
+.subsidiaryDesc {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.servicesWrapper {
+  padding: 60px;
+}
+
+.servicesTitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--foreground);
+  letter-spacing: 1px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.serviceIcon {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.serviceName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.serviceDesc {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subsidiaryHeader, .servicesWrapper {
+    padding: 40px 20px;
+  }
+  .subsidiaryTitle {
+    font-size: 2rem;
+  }
+}
